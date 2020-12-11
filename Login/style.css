@@ -1,0 +1,80 @@
+.main-content {
+  width: 36%;
+  border-radius: 20px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin: 6% auto;
+  display: flex;
+}
+.company__info {
+  background-color: #008080;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+  .main-content {
+    width: 100%;
+  }
+  .company__info {
+    display: none;
+  }
+  .login_form {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+@media screen and (min-width: 642px) and (max-width: 800px) {
+  .main-content {
+    width: 70%;
+  }
+}
+.row > h2 {
+  color: #008080;
+}
+.login_form {
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+form {
+  padding: 0 60px;
+}
+.form__input {
+  width: 86%;
+  border: 0px solid transparent;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+  padding: 15px 15px 5px;
+  padding-left: 25px;
+  outline: none;
+  margin: 1em auto;
+  transition: 0.3s;
+}
+.form__input:focus {
+  border-bottom-color: #008080;
+  box-shadow: 0 0 5px rgba(0, 80, 80, 0.4);
+  border-radius: 4px;
+}
+.btn {
+  transition: 0.3s;
+  width: 90%;
+  border-radius: 30px;
+  color: #008080;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid #008080;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #008080;
+  color: #fff;
+}

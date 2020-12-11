@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/fontawesome.css"/>
+</head>
+<body>
+
+<style>
+    :root {
+        --main-color: red;
+        --main-dark-color: #0A3514;
+        --background-color: #ddd;
+        --shadow-color: #e7eaec;
+    }
+
+    .bg-main {
+        background-color: var(--background-color);
+        color: var(--main-color);
+    }
+
+    .sidebar {
+        height: 100vh;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .shadow {
+        -webkit-box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color) !important;
+        -moz-box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color) !important;
+        box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color) !important;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: var(--main-color);
+    }
+
+    a:hover {
+        color: var(--main-dark-color);
+        text-decoration: none;
+    }
+
+    .card:hover{
+        -webkit-box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color);
+        -moz-box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color);
+        box-shadow: 0 .125rem 1.25rem .5rem var(--shadow-color);
+    }
+
+    .card.hover-border:hover {
+        border-color: var(--main-color);
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .card.shadow:hover {
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .custom-toolbar {
+
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 sidebar bg-main">
+            <ul>
+                <li>
+                    <a href="#">Link one</a>
+                </li>
+
+                <li>
+                    <a href="#">Link two</a>
+                </li>
+
+                <li>
+                    <a href="#">Link three</a>
+                </li>
+
+                <li>
+                    <a href="#">Link four</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-sm-8 content bg-main">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2>Select2 control:</h2>
+                    <a href="https://select2.org/" target="_blank">Select 2 control for dropdown</a>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2>Shadow generator</h2>
+                    <a href="https://html-css-js.com/css/generator/box-shadow/" target="_blank">Box shadow</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="card hover-border">
+                        <div class="card-header">
+                            <h4>Example</h4>
+                        </div>
+
+                        <div class="card-body">
+                            <p>Content</p>
+                        </div>
+
+                        <div class="card-footer">
+                            All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/fontawesome.css"/>
+
+<script src="../assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

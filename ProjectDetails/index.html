@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Project details</title>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" type="text/css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../../assets/css/fonts/fontawesome/css/all.min.css" />
+
+    <!-- Quill editor stylesheet -->
+    <link href="../../assets/css/plugins/quill/quill.snow.css" rel="stylesheet" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg">
+    <img src="../../assets/images/logo.png" style="height:60px; width: 200px; margin-left:65px;" />
+    <ul class=" navbar-nav" style="margin-left: 95px;">
+        <li class=" nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+        </li>
+    </ul>
+    <div class="d-flex flex-row align-items-start ml-auto pl-1 py-1">
+        <div class="searchWrapper mr-3" style="position: relative; bottom: 2px">
+            <input class="form-control" type="text" placeholder="Search..." aria-label="Search"
+                   style="width: 300px; height: 50px" />
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-secondary pr-3">
+                    <i class="fas fa-sign-in-alt"></i>Sign in
+                </button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fas fa-user-plus"></i>Sign up
+                </button>
+            </li>
+            <li>
+                <div class="dropdown" id="myAcc">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="myAccButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> My account
+                    </button>
+                    <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Roles & Permissions</a>
+                        <a class="dropdown-item" href="#">Projects</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="d-flex flex-row content">
+    <div class="sidebar d-flex flex-column">
+        <div class="searchWrapper ">
+            <input class="form-control" type="text" placeholder="Search documentation..." aria-label="Search" />
+        </div>
+        <ul class="pl-2">
+            <li>
+                <div><a href="#">Getting started</a></div>
+            </li>
+            <li>
+                <div><a href="#" title="Smart full-text Smart full-text Smart full-text">Smart full-text Smart
+                    full-text Smart full-text</a></div>
+            </li>
+            <li>
+                <div><a href="#">Writing more pages</a></div>
+            </li>
+            <li>
+                <div><a href="#">Custom navbar</a></div>
+            </li>
+            <li>
+                <div><a href="#">Cover page</a></div>
+            </li>
+            <li>
+                <div><a href="#">Customization</a></div>
+            </li>
+            <li>
+                <div><a href="#">Configuration</a></div>
+            </li>
+            <li>
+                <div><a href="#">Themes</a></div>
+            </li>
+            <li>
+                <div><a href="#">List of Plugins</a></div>
+            </li>
+            <li>
+                <div><a href="#">Write a Plugin</a></div>
+            </li>
+            <li>
+                <div><a href="#">Markdown configuration</a></div>
+            </li>
+            <li>
+                <div><a href="#">Language highlighting</a></div>
+            </li>
+            <li>
+                <div><a href="#">Guide</a></div>
+            </li>
+            <li>
+                <div><a href="#">Deploy</a></div>
+            </li>
+            <li>
+                <div><a href="#">Helpers</a></div>
+            </li>
+            <li>
+                <div><a href="#">Vue compatibility</a></div>
+            </li>
+            <li>
+                <div><a href="#">CDN</a></div>
+            </li>
+            <li>
+                <div><a href="#">Offline Mode(PWA)</a></div>
+            </li>
+            <li>
+                <div><a href="#">Server-Side Rendering(SSR)</a></div>
+            </li>
+            <li>
+                <div><a href="#">Embed Files</a></div>
+            </li>
+            <li>
+                <div><a href="#">Awesome docsify</a></div>
+            </li>
+            <li style="margin-bottom: 0;">
+                <div><a href="#">Changelog</a></div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="editorContainer">
+        <input class="form-control titleInput" type="text" placeholder="Title" aria-label="Search" />
+        <div id="editor"></div>
+        <div class="buttons d-flex flex-row mt-2">
+            <button type="button" class="btn btn-outline-danger mr-auto">
+                <i class="fas fa-trash-alt"></i>Delete
+            </button>
+            <button type="button" class="btn btn-outline-secondary mr-2">
+                <i class="fas fa-edit"></i>
+                <span>Edit</span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary pr-4">
+                <i class="fas fa-save"></i>Save
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h5 class="pr-1 pt-2">Copyright © <a href="https://i4di.org" target="_blank">Institute for Development
+        Impact</a>
+    </h5>
+</footer>
+
+<!-- JS dependencies -->
+<script src="../../assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="../../assets/js/popper.min.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Include the Quill library -->
+<script src="../../assets/js/plugins/quill/quill.min.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+        var quill = new Quill('#editor', {
+            theme: 'snow',
+            placeholder: 'Content...'
+        });
+    </script>
+</body>
+
+</html>
